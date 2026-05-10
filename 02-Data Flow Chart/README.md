@@ -2,7 +2,7 @@
 ## step 1: Mysql Source Kafka
 - create source connector
 ```sh
-$ curl -X GET  -H "Accept: application/json" -H "Content-Type: application/json" http://localhost:8083/connectors/ -d @mysql-source.json
+$ curl -i -X POST  -H "Accept: application/json" -H "Content-Type: application/json" http://localhost:8083/connectors/ -d @mysql-source.json
 ```
 
 <img src="image\mysql-source-kafka.png" width="100%" height="40%">
@@ -38,7 +38,7 @@ $ curl -X GET  -H "Accept: application/json" -H "Content-Type: application/json"
 ## step 2: Mysql Sink Kafka
 - create sink connector
 ```sh
-$ curl -X GET  -H "Accept: application/json" -H "Content-Type: application/json" http://localhost:8083/connectors/ -d @mysql-sink-kafka.json
+$ curl -i -X POST -H "Accept: application/json" -H "Content-Type: application/json" http://localhost:8083/connectors/ -d @mysql-sink-kafka.json
 ```
 <img src="image\mysql-sink-kafka.png" width="100%" height="40%">
 
