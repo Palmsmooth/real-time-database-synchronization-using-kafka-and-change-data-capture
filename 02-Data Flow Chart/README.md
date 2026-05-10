@@ -156,7 +156,7 @@ $  exit;
 ### step 3.2: Mysql Sink Ksql
 - create sink connector
 ```sh
-$ curl -X GET  -H "Accept: application/json" -H "Content-Type: application/json" http://localhost:8083/connectors/ -d @mysql-sink-ksqldb.json
+$ curl -i -X POST -H "Accept: application/json" -H "Content-Type: application/json" http://localhost:8083/connectors/ -d @mysql-sink-ksqldb.json
 ```
 <img src="image\mysql-sink-ksqldb.png" width="100%" height="40%">
 <img src="image\connectors mysql-sink-ksqldb.png" width="100%" height="40%">
