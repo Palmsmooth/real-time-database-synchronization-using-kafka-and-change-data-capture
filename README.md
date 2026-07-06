@@ -1,4 +1,4 @@
-# Data Engineering Project: Change Data Capture in Kafka
+# Data Engineering Project: Real-Time Database Synchronization Using Kafka and Change Data Capture
 
 ## Project Overview
 This project aims to develop a system for DataTH Cineplex to synchronize data between databases using Kafka. The system will implement Change Data Capture (CDC) to capture the binlog from the source database, process the incoming data, and apply it to the destination database accurately, completely, and immediately in real-time synchronization.
